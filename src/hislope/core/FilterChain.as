@@ -63,7 +63,7 @@ package hislope.core
 		// CONSTANTS //////////////////////////////////////////////////////////////////////////
 		
 		public static var _currentPanel:FilterPanel = null;
-		[Embed(source="../../assets/sounds/subtle.mp3")]
+		[Embed(source="../../../assets/sounds/subtle.mp3")]
 		public static const UISound:Class;
 		
 		// MEMBERS ////////////////////////////////////////////////////////////////////////////

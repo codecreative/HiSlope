@@ -396,8 +396,9 @@ package hislope.filters.inputs
 		}
 		
 		
-		private function onStatusChange(event:StatusEvent):void
+		protected function onStatusChange(event:StatusEvent):void
 		{
+			
 			if (event.code == "Camera.Unmuted")
 			{
 				showCameraSettings();
