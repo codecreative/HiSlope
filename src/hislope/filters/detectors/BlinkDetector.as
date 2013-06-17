@@ -207,8 +207,8 @@ package hislope.filters.detectors
 
 						metaBmpData.eyesBlink = true;
 						
-						drawRect(leftEye, 0x00ff00);
-						drawRect(rightEye, 0x00ff00);
+						drawRect(leftEye, 0xffffff);
+						drawRect(rightEye, 0xffffff);
 						metaBmpData.draw(outline);
 					}
 				}
@@ -235,8 +235,10 @@ package hislope.filters.detectors
 		
 		private function drawRect(blobRect:Rectangle, color:uint):void
 		{
-			outline.graphics.lineStyle(0, color, 1);
+			outline.graphics.beginFill(0xffffff,0.5);
+			outline.graphics.lineStyle(2, color, 1);
 			outline.graphics.drawRect(blobRect.x, blobRect.y, blobRect.width, blobRect.height);
+			outline.graphics.endFill();
 		}
 		
 		// EVENT HANDLERS /////////////////////////////////////////////////////////////////////
