@@ -235,7 +235,7 @@ package hislope.filters.detectors
 		
 		private function drawRect(blobRect:Rectangle, color:uint):void
 		{
-			outline.graphics.beginFill(0xffffff,0.5);
+			outline.graphics.beginFill(0xffffff,0.25);
 			outline.graphics.lineStyle(2, color, 1);
 			outline.graphics.drawRect(blobRect.x, blobRect.y, blobRect.width, blobRect.height);
 			outline.graphics.endFill();
