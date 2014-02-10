@@ -207,8 +207,8 @@ package hislope.filters.detectors
 
 						metaBmpData.eyesBlink = true;
 						
-						drawRect(leftEye, 0xffffff);
-						drawRect(rightEye, 0xffffff);
+						drawRect(leftEye, 0xffa700);
+						drawRect(rightEye, 0xffa700);
 						metaBmpData.draw(outline);
 					}
 				}
